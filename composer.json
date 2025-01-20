@@ -1,6 +1,6 @@
 {
-    "name": "saintsystems/nova-actions-left",
-    "version":"4.0.2",
+    "name": "kato-dev/nova-actions-left",
+    "version":"5.0.0",
     "description": "Laravel Nova actions on the left",
     "keywords": [
         "laravel",
@@ -8,13 +8,13 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.0",
-        "laravel/nova": "^4.13",
-        "nova-kit/nova-packages-tool": "^1.3.4"
+        "php": "^8.2",
+        "laravel/nova": "^5.0",
+        "nova-kit/nova-packages-tool": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "SaintSystems\\Nova\\ActionsLeft\\": "src/"
+            "KatoDev\\NovaActionsLeft\\": "src/"
         }
     },
     "repositories": [
@@ -26,7 +26,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SaintSystems\\Nova\\ActionsLeft\\NovaActionsLeftServiceProvider"
+                "KatoDev\\NovaActionsLeft\\NovaActionsLeftServiceProvider"
             ]
         }
     },

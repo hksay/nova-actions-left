@@ -8,9 +8,9 @@ Moves the resource actions column to the left on the ResourceTableRow.
 
 You can install the package via composer:
 
-For Laravel Nova 4+:
+For Laravel Nova 5+:
 
-`composer require saintsystems/nova-actions-left`
+`composer require kato-dev/nova-actions-left`
 
 For Laravel Nova 3.x and below, see [flagstudio/nova-actions-left](https://github.com/flagstudio/nova-actions-left)..
 

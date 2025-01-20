@@ -1,23 +1,22 @@
-const mix = require('laravel-mix')
-const webpack = require('webpack')
-const path = require('path')
+const mix = require("laravel-mix");
+const webpack = require("webpack");
+const path = require("path");
 
 class NovaExtension {
   name() {
-    return 'saintsystems/nova-actions-left'
+    return "kato-dev/nova-actions-left";
   }
 
   register(name) {
-    this.name = name
+    this.name = name;
   }
 
   webpackConfig(webpackConfig) {
-
     webpackConfig.externals = {
-        vue: 'Vue',
-        'laravel-nova': 'LaravelNova',
-        '@/mixins': 'LaravelNova',
-    }
+      vue: "Vue",
+      "laravel-nova": "LaravelNova",
+      "@/mixins": "LaravelNova",
+    };
 
     // webpackConfig.resolve.alias = {
     //     vue: '@vue/compat'
@@ -47,8 +46,8 @@ class NovaExtension {
 
     webpackConfig.output = {
       uniqueName: this.name,
-    }
+    };
   }
 }
 
-mix.extend('nova', new NovaExtension())
+mix.extend("nova", new NovaExtension());
