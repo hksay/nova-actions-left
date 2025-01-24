@@ -27,7 +27,7 @@
       />
     </td>
 
-        <td
+    <td
       :class="{
         'py-2': !shouldShowTight,
         'cursor-pointer': resource.authorizedToView,
@@ -302,9 +302,10 @@ export default {
       if (!this.resource.authorizedToView) {
         return
       }
-      this.commandPressed
-        ? window.open(this.viewURL, '_blank')
-        : router.visit(this.viewURL)
+      window.location.href = this.viewURL
+      // this.commandPressed
+      //   ? window.open(this.viewURL, '_blank')
+      //   : router.visit(this.viewURL)
     },
 
     navigateToEditView(e) {
